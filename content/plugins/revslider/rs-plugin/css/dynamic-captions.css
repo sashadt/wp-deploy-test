@@ -1,0 +1,72 @@
+.tp-caption.dt_hometext_lrg {
+font-size:50px;
+line-height:60px;
+font-weight:400;
+font-family:"Open Sans",Helvetica,Arial,sans-serif;
+color:#005b83;
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+margin:0px;
+white-space:nowrap;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.dt_hometext_med {
+font-size:30px;
+line-height:40px;
+font-weight:400;
+font-family:"Open Sans",Helvetica,Arial,sans-serif;
+color:#005b83;
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+margin:0px;
+white-space:nowrap;
+border-width:0px;
+border-color:rgb(255, 255, 255);
+border-style:none;
+}
+
+.tp-caption.quote {
+font-size:20px;
+line-height:1.5;
+text-decoration:none;
+background-color:transparent;
+font-style:italic;
+text-align:left;
+border-width:0px;
+border-color:rgb(68, 68, 68);
+border-style:none;
+}
+
+.tp-caption.quote_name {
+font-size:20px;
+line-height:21px;
+text-decoration:none;
+background-color:transparent;
+font-style:italics;
+text-align:right;
+border-width:0px;
+border-color:rgb(68, 68, 68);
+border-style:none;
+}
+
+.tp-caption.black {
+color:#000;
+text-shadow:none;
+}
+
+.tp-caption.black_right {
+color:#000000;
+text-decoration:none;
+text-shadow:none;
+background-color:transparent;
+text-align:right;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
