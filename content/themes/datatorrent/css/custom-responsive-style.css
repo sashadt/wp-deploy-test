@@ -1,0 +1,111 @@
+/* =================================
+   Custom Responsive Styles
+================================== */
+/* Small Mobile Devices ( < 768px ) Style Begin */
+@media (min-width: 0px) and (max-width: 767px) {
+    .homepage-hero {
+      padding:0;
+    }
+    .homepage-hero h2 {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+    #HomeSliderAni .bx-wrapper .bx-pager {
+    	display: none;
+    }
+    #HomeSliderAni .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+      bottom: -40px;
+      position: absolute;
+      width: 100%;
+    }
+    .inline-list {
+      list-style: outside none none;
+      margin: 6px 0;
+      overflow: hidden;
+    }
+    .inline-list > li {
+      display: inline-block;
+      margin: 0 5px 5px;
+      padding: 0;
+    }
+    ul#latest_events li {
+        width: 100%;
+    }
+    ul#latest_events li .event-image {
+        width: 100%;
+        text-align: center;
+    }
+    .cta-box h3.internet-of-things {
+        padding-left: 50px;
+    }
+    h3.media, h3.webmobile {
+        padding-left: 65px;
+    }
+}
+/* Small Mobile Devices ( < 768px ) Style End */
+/* Small devices (tablets, 768px and up)  Style Begin */
+@media (min-width: 768px) and (max-width: 991px) {
+    .homepage-hero h2 {
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+    .homepage-hero {
+      padding-bottom: 45px;
+    }
+    #menu-dt-main-menu li {
+      margin-left: 15px;
+    }
+    #HomeSliderAni .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+      bottom: -35px;
+      position: absolute;
+      width: 100%;
+    }
+    #ShareThisModule {
+      top: 20%;
+    }
+    body.post-type-archive-resources .path-shortcuts dl dd a, body.post-type-archive-resources .nav-onpage ul li a {
+        padding: 16px 5px;
+    }
+}
+/* Small devices (tablets, 768px and up)  Style End */
+/* Medium devices (desktops, 992px and up) Styles Begin */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .homepage-hero {
+      padding-bottom: 20px;
+    }
+    .homepage-hero h2 {
+      font-size: 30px;
+      margin-bottom: 24px;
+    }
+    #HomeSliderAni .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+      bottom: -30px;
+      position: absolute;
+      width: 100%;
+    }
+    #ShareThisModule {
+      top: 20%;
+    }
+
+}
+/* Medium devices (desktops, 992px and up) Styles End */
+/* Custom Sizes (641px and 701px)  Style Begin */
+@media (min-width: 640px) and (max-width: 702px) {
+    .path-shortcuts dl dd a, .nav-onpage ul li a {
+        padding: 16px 8px;
+    }
+}
+/* Small devices (641px and 701px)  Style End */
+/* Custom Sizes (391px and 768px)  Style Begin */
+@media (min-width: 391px) and (max-width: 768px) {
+    h3.media, h3.webmobile {
+        padding-left: 40px;
+    }
+}
+/* Small devices (391px and 768px)  Style End */
+/* Custom Sizes (479px and 768px)  Style Begin */
+@media (min-width: 479px) and (max-width: 768px) {
+    .cta-box h3.internet-of-things {
+        padding-left: 40px;
+    }
+}
+/* Small devices (479px and 768px)  Style End */

@@ -1,0 +1,500 @@
+/*
+Theme Name: DataTorrent Corp Website
+Theme URI: https://www.datatorrent.com/wp-content/themes/datatorrent
+Author: WAAS Team, Position2
+Author URI: http://www.position2.com
+Description: This is custom theme developed for DataTorrent by WAAS Team, Position2
+Version: 1.0
+*/
+/* ==================================== 
+          DataTorrent styles code begin   
+ ====================================== */
+/* =WordPress Core
+-------------------------------------------------------------- */
+#wpadminbar {
+    z-index: 9999999;
+}
+.header-main a.dt-logo {
+	opacity: 1;
+}
+input::-moz-focus-inner {
+ border: 0;
+}
+.alignnone {
+	margin: 10px;
+}
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 10px auto 10px auto;
+}
+.alignright {
+	float:right;
+	margin: 0 0 10px 10px;
+}
+.alignleft {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.aligncenter {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+a img.alignright {
+	float: right;
+	margin: 0 0 10px 10px;
+}
+a img.alignnone {
+	margin: 0 10px 10px 0;
+}
+a img.alignleft {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+.wp-caption.alignnone {
+	margin: 5px 5px 5px 0;
+}
+.wp-caption.alignleft {
+	margin: 5px 5px 5px 0;
+}
+.wp-caption.alignright {
+	margin: 5px 0 5px 5px;
+}
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+/* =WordPress Core
+-------------------------------------------------------------- */
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+/** THEME
+===================================*/
+.bx-wrapper .bx-viewport {
+	left: -5px;
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(img/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(img/controls.png) no-repeat 0 -32px;
+}
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(img/controls.png) no-repeat -43px -32px;
+}
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(img/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(img/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+/*BX Slider End*/
+body#defaulttopbg{
+	background:#1e1135 url("img/hero-bg.png") no-repeat center top;
+}
+.business-icons{
+	width:120px;
+}
+.featured-icons{
+	width:180px;
+}
+/* Home Page Slider Styles Begin */
+#HomeSliderAni {
+	min-height: 200px;
+	overflow: hidden;
+}
+#HomeSliderAni .bx-wrapper .bx-viewport {
+	left: 0;
+}
+#HomeSliderAni ul.homeslider, #HomeSliderAni ul.homeslider li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#HomeSliderAni .bx-wrapper .bx-pager.bx-default-pager a {
+	background-color: #4b3f5e;
+	border: 1px solid #fff;
+}
+#HomeSliderAni .bx-wrapper .bx-pager.bx-default-pager a:hover, #HomeSliderAni .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background-color: #fff;
+	border: 1px solid #4b3f5e;
+}
+/* Home Page Slider Styles End */
+/* Breadcrumbs */
+#BreadCrumbs {
+    padding: 0 0 20px 0;
+}
+/* Share this links*/
+.share-links a { 
+	padding-right:5px;	
+}
+/* Social sharing begin */
+#ShareThisModule {
+	width: 60px;
+	background: #e1e1e1;
+	position: fixed;
+	right: 0;
+    top: 40%;
+    z-index: 99999;
+}
+#ShareThisModule .share-icon {
+	width: 60px;
+	height: 65px;
+	float: left;
+	text-align: center;
+	font-size: 30px;
+	color: #767678;
+	cursor: pointer;
+}
+#ShareThisModule .share-icon b {
+	font-weight: 400;
+	font: normal 14px/120% 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+#SharethisItems {
+	width: 100%;
+	float: left;
+	margin: 0 0 -100px 0;
+	height: 0;
+	padding: 10px 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+#ShareThisModule:hover #SharethisItems {
+	height: auto;
+	margin: 0;
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+#ShareThisModule #SharethisItems li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #ccc;
+}
+#ShareThisModule #SharethisItems li span {
+	cursor: pointer;
+	padding: 5px 10px;
+	margin: 0;
+	font-size: 20px;
+	color: #767678;
+	display: block;
+	text-align: center;
+}
+#ShareThisModule #SharethisItems li span:hover {
+	opacity: 0.7;
+}
+/* Social sharing end */
+
+/* Icon alignment begins*/
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+/* Icon alignment ends*/
+/* Band Color Type begins */
+.primary-band {
+	background-color: #00A5DF;	
+	color: #fff;
+}
+.secondary-band {
+	background-color: #EAEAEA;	
+	color: #000;
+}
+.custom-band {
+	background-color: #1E1135;	
+	color: #fff;
+}
+.custom-band h3, .custom-band h2{
+	color: #fff;
+}
+.light-band {
+	background-color: #fff;	
+}
+.dark-band {
+	background-color: #D3CAE5;	
+	color: #000;
+}
+/* Band Color Type ends */
+/* =How It Works Page */
+.entry-content table.blockdiagramTable { border: none; border-spacing: 6px; border-collapse: separate;}
+.blockdiagramTable th, .blockdiagramTable td { color: #fff; text-align: center; vertical-align:middle; font-weight: 600; background-color: #1C9D0F; line-height: 1.2em; padding: 10px; padding: 0.625rem; border: none; }
+.blockdiagramTable th.real-time { background-color: #dedede; color: #767b7d;}
+.blockdiagramTable th.hadoop, .blockdiagramTable td.hadoop { background-color: #00a5e0;}
+.blockdiagramTable td { -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.blockdiagramTable td strong { text-decoration: underline; }
+.blockdiagramTable td.malhar { -webkit-border-radius: 12px; -webkit-border-bottom-right-radius: 0px; -webkit-border-bottom-left-radius: 0px; -moz-border-radius: 12px; -moz-border-radius-bottomright: 0px; -moz-border-radius-bottomleft: 0px; border-radius: 12px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; }
+/*------*/
+.dt-for-business .section-header #HadoopEvaluationSection li {
+  padding-top: 12px !important;
+}
+
+/*------*/
+/* cta-box style begin*/
+.cta-box {border: 1px solid #00a5e0; padding: 1.750em; background-color: #eff7fa; margin-bottom: 20px; margin-bottom: 1.250rem;}
+.cta-box h3 {color: #062536; font-size: 20px; font-size: 1.3rem; font-weight: 400;padding-left: 40px}
+.cta-box p { color: #767b7d; font-size: 16px; font-size: 1rem; font-weight: 300; line-height: 1.5; }
+.cta-box a { background-color: #00a5e0; padding:12px 32px 12px 12px; padding: 0.750rem 2rem 0.750rem 0.750rem; color: #fff; border-bottom: 4px solid #0d8ac9; text-decoration: none; font-size: 16px; font-size: 1rem; width: 220px; margin: 0 auto; }
+.cta-box a:after { font-family: 'FontAwesome'; content: '\f105'; color: #fff; position: relative; left: 1rem;  }
+.cta-box a:hover { border-bottom-width: 3px; position: relative; top: 1px; }
+.cta-box a:active { border-bottom-width: 1px; position: relative; top: 3px; }
+.cta-gray { border-color: #dfdfdf; background-color: #f9f9f9}
+/* cta-box style end*/
+.cta-box h3.internet-of-things{
+	background: rgba(0, 0, 0, 0) url("img/icon_internet-of-things.png") no-repeat scroll 0 0;
+	background-size: contain;
+}
+h3.security{
+	background: rgba(0, 0, 0, 0) url("img/Security_Intelligence.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+h3.finance{
+	background: rgba(0, 0, 0, 0) url("img/Finance.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+h3.telecom{
+	background: rgba(0, 0, 0, 0) url("img/Telecom_Networking.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+h3.grid{
+	background: rgba(0, 0, 0, 0) url("img/Smart_Grid_Utilities.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+ h3.siteops {
+	background: rgba(0, 0, 0, 0) url("img/Site_Operations.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+h3.webmobile {
+	background: rgba(0, 0, 0, 0) url("img/Web_Mobile_Applications.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+h3.media {
+	background: rgba(0, 0, 0, 0) url("img/Media_Online_Advertising.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+h3.retail {
+	background: rgba(0, 0, 0, 0) url("img/Retail_E-commerce.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+h3.healthcare {
+	background: rgba(0, 0, 0, 0) url("img/Healthcare.svg") no-repeat scroll 0 0;
+	background-size: contain;
+	padding-left: 40px;
+	color: #005e8e;
+}
+.event-image {
+	background-color: #f9f9f9;
+	margin: 10px -2px;
+}
+.event-image a {
+	display: block;
+	padding: 10px;
+}
+/*Contact Us Page Styles Begin*/
+.mktoForm .mktoFieldWrap {
+	position: relative;
+}
+button.mktoButton, .mktoButtonWrap.mktoNative {
+	margin: 10px 0 0 0 !important;
+}
+.mktoLabel {
+	font-weight: bold;
+}
+/*Contact Us Page Styles End*/
