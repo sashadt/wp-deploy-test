@@ -2,3 +2,6 @@
 	path = wordpress
 	url = https://github.com/WordPress/WordPress.git
 	branch = 4.2-branch
+[submodule "content/themes/datatorrent"]
+	path = content/themes/datatorrent
+	url = git@github.com:DataTorrent/website-wp-theme.git
