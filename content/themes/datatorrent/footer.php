@@ -41,7 +41,7 @@
                 <li><span class='st_googleplus_custom' displayText='Email'><i class="fa fa-google-plus"></i></span></li>
             </ul>
         </div>
-        <script type="text/javascript" src="/wp-content/themes/datatorrentvone/js/all.js"></script>
+        <script type="text/javascript" src="/wp-content/themes/datatorrent/js/all.js"></script>
         <script type="text/javascript">$("#latest_events").find("li").css("float","left")</script>
         <?php wp_footer(); ?>
         <!-- Munchkin Code for Marketo begins-->

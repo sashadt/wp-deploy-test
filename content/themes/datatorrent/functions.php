@@ -20,7 +20,7 @@ add_action( 'widgets_init', 'arphabet_widgets_init' );
 /**
  * Proper way to enqueue scripts and styles
  */
-function datatorrentvone_scripts() {
+function datatorrent_scripts() {
 	wp_enqueue_style( 'zurb-style-guide', get_template_directory_uri() . '/css/app.css', array(), '1.0.0', false );
 	wp_enqueue_style( 'responsive-table', get_template_directory_uri() . '/css/responsive-tables.css', array(), '1.0.0', false );
 	wp_enqueue_style( 'default-style', get_stylesheet_uri() );
@@ -31,7 +31,7 @@ function datatorrentvone_scripts() {
 	wp_enqueue_script( 'responsive-tables', get_template_directory_uri() . '/js/responsive-tables.js', array(), '1.0.0', true );
 	wp_enqueue_style( 'font-awsome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array(), '3.2.0', false );
 }
-add_action( 'wp_enqueue_scripts', 'datatorrentvone_scripts' );
+add_action( 'wp_enqueue_scripts', 'datatorrent_scripts' );
 //Addding Wordpress Menus
 function register_my_menus() {
 	register_nav_menus(
